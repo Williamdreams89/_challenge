@@ -1,9 +1,16 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
- 
-
- 
-[requires]
-python_version = "3.9"
+{
+  "builds": [
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/build-script",
+      "config": {
+        "commands": [
+          "python -m venv venv",  # Create a virtual environment (optional)
+          "source venv/bin/activate",  # Activate virtual environment (optional)
+          "pip install -r requirements.txt"  # Install dependencies
+        ]
+      }
+    }
+  ],
+  "functions": { "prebuild": "build_files.sh" }  # Run build script before deployment
+}
