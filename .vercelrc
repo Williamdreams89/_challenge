@@ -5,6 +5,7 @@
       "use": "@vercel/build-script",
       "config": {
         "commands": [
+          "sudo apt-get install --reinstall python-pkg-resources",
           "python -m venv venv",  
           "source venv/bin/activate",  
           "pip install -r requirements.txt"  
