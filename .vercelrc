@@ -12,5 +12,5 @@
       }
     }
   ],
-  "functions": { "prebuild": "build_files.sh" }  # Run build script before deployment
+  "functions": { "prebuild": "build_files.sh" }  
 }
