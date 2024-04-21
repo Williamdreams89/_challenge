@@ -129,9 +129,6 @@ AUTH_USER_MODEL = "usersapp.User"
 
 SWAGGER_SETTINGS = {
    'SECURITY_DEFINITIONS': {
-      'Basic': {
-            'type': 'basic'
-      },
       'Bearer': {
             'type': 'apiKey',
             'name': 'Authorization',
