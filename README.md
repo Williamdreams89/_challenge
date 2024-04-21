@@ -32,5 +32,5 @@ python3 -m venv venv && source venv/bin/activate
 ## Install all the requirement from the requirements.txt file and Run the local server
 pip install -r requirements.txt && python3 manage.py runserver
 
-# Finally, open up your browser and find the project running locally on the default port on localhost
+# Finally, open up your browser and find the project running locally at the default port on localhost
 # Thank you, William Dreams 
