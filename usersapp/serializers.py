@@ -19,3 +19,8 @@ class UserLoginSerialzer(serializers.Serializer):
         if user and user.is_active:
             return user 
         raise serializers.ValidationError("Invalid Email or Password!")
+    
+class UserListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = get_user_model()
+        fields = "__all__"

@@ -1,9 +1,16 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
 from .models import User
-from .serializers import UserRegistrationSerializer, UserLoginSerialzer
+from .serializers import UserRegistrationSerializer, UserLoginSerialzer, UserListSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 
+
+
+
+class UserListAPIView(generics.ListAPIView):
+    """List all the users existing in the database."""
+    serializer_class = UserListSerializer
+    queryset = User.objects.all().order_by("-date_added")
 
 class UserRegistrationAPIView(generics.GenericAPIView):
     serializer_class = UserRegistrationSerializer
