@@ -3,7 +3,7 @@
 Welcome to the Django Blog API project! This README will guide you through the steps to clone and run the project locally on your machine. 
 
 ## Public link
-The project is hosted and it is publicly accessible on the vercel => [BlogAPI](https://blogapi-two.vercel.app)
+The project is hosted and it is publicly accessible on vercel at => [BlogAPI](https://blogapi-two.vercel.app)
 
 ## Prerequisites
 
