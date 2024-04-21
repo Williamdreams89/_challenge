@@ -15,14 +15,11 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Cloning and running project
 
-
 ```bash
+# Clone the repository
 git clone https://github.com/Williamdreams89/_challenge.git
 
-# Setup a virtual environment 
-
 # Navigate into the directory
-
 cd _challenge
 
 # Create a new vrtual environment and activate it
