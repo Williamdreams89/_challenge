@@ -15,7 +15,6 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Cloning and running project
 
-First, clone this repository to your local machine using Git:
 
 ```bash
 git clone https://github.com/Williamdreams89/_challenge.git
